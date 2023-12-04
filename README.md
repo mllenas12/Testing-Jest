@@ -1,86 +1,47 @@
-# Sprint 3 IT Academy | Video management tool
+# Sprint 3 IT Academy | Testing with Jest
 
 ## Introduction
 
-A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.
-
-You will be in charge of setting up the core of the application: all the logic of filtering and sorting of movies. You have 2 weeks to finish, which is how long this sprint lasts.
-
-<br>
-
-## Requirements
+A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have since the process is currently done manually.
 
 
-1. Clone this repo
-```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-sprint-3-movies
-```
-
-2. Unlink your repo from the itacademy repository
-```bash
-$ git remote rm origin
-```
-
-3. Link your repo to the repository you have to create in your github account
-```bash
-$ git remote add origin <your repo name!>
-```
-
-<br>
-
-## Submission
-
-1. Upon completion, run the following commands:
-
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
-```
-
-2. Create Pull Request.
-
-3. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
-
-
-
-<br>
-
-## Introduction
-
-The statement of the exercise is available on the virtual campus.
-
-<br>
-
-## Tests!
-
+## Tests: 
+Part of the exercise was to pass all the test implementing loops in  ES6 (map, reduce ,filter...).
+To check all tests: 
 
 ```shell
 $ npm install
-$ npm run test:watch
+$ npm run test
 ```
 
-And last, open the generated `test-results.html` file with the "Live Server" VSCode extension to see test results.
+And last, execute `npm run test:watch` to generate a new file: `test-results.html` and open it with the "Live Server" VSCode extension to see test results.
 
-Apart from the statement, you will know exactly what you are asked to do by looking at the file `tests/films.spec.js`, all tests are already defined here!
+This is an image from `test-results.html` where you can check that all tests have been passed: 
 
-<br>
+![visual](Visual-Testing.png)
 
-## Instructions
+## Built with:
 
-You have the following indications from the frontend responsible:
+![html](https://github.com/mllenas12/Assets/blob/84325e197bcdad6cd261ca7d7090e7df05c5736f/Logo/html.png)
+![js](https://github.com/mllenas12/Assets/blob/ffed365807b4ab5be021011f3f17628f1df2aee5/Logo/js.png)
 
-- It is mandatory to implement all loops in ES6 (using map, reduce, filter and sort to manipulate arrays).
+## Contributions: 
 
-- As at the moment we don't consume data from a server using an API, we will work with data from the src/data.js archive. For the moment we will implement the logic using
-an array of information about 250 movies.
+Contributions are welcome & appreciated by everyone!
 
-- The implementation is about processing this array of movies, to display it as requested in each exercise.
+If you would like to contribute, please follow these steps:
 
-- The logic to implement will be placed in the src/films.js file.
+  1\. Fork the repository.  
+  2\. Create a branch for your changes.  
+  3\. Make your changes.  
+  4\. Test your changes.  
+  5\. Commit your changes.  
+  6\. Push your changes to your fork.  
+  7\. Open a pull request.
 
-- You don't need to show the result of each function on the screen. Your goal is to pass the tests.  More information on how to program oriented to pass tests at the end of the document.
 
-- Don't forget to include the capture of the test results in the virtual campus.
+## Authors
+
+- [@mllenas12](https://www.github.com/mllenas12)
 
 
