@@ -293,6 +293,51 @@ describe('Function "orderByYear"', () => {
 // Exercise 6
 // YOUR CODE HERE. Test moviesAverageByCategory()
 
+describe('Function "moviesAverageByCategory"', () => {
+  it('should be declared', () => {
+    expect(typeof moviesAverageByCategory).toBe('function');
+  });
+
+  it("should return a number", () => {
+    expect(typeof moviesAverageByCategory(movies, "Drama")).toBe("number");
+  });
+  it("should be different from NaN", () => {
+    expect(moviesAverageByCategory(movies, "Drama")).not.toBeNaN();
+  });
+  it("should return the average score of of movies of an specific genre", () => {
+    expect(moviesAverageByCategory([
+      {
+        title: 'Citizen Kane',
+        year: 1941,
+        director: 'Orson Welles',
+        duration: '1h 59min',
+        genre: ['Drama', 'Mystery'],
+        score: 8.4
+      },
+      {
+        title: 'Dangal',
+        year: 2016,
+        director: 'Nitesh Tiwari',
+        duration: '2h 41min',
+        genre: ['Action', 'Biography', 'Drama', 'Sport'],
+        score: 8.6
+      },
+      {
+        title: 'Vertigo',
+        year: 2001,
+        director: 'Alfred Hitchcock',
+        duration: '2h 8min',
+        genre: ['Mystery', 'Romance', 'Thriller'],
+        score: 8.4
+      },
+    ], "Drama")).toBe(8.5);
+  })
+
+});
+
+
+
+
 
 // Exercise 7
 describe('Function "hoursToMinutes"', () => {
